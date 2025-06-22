@@ -2,88 +2,129 @@
 <html lang="en" class=""> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Ahmed Elgendy - Portfolio</title>
+    <title>Ali Ahmed Elgendy - CV</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <script>
-        // 2. Custom configuration for Tailwind (optional, but good for custom colors/fonts)
+        // Custom configuration for Tailwind
         tailwind.config = {
-            darkMode: 'class', // This enables class-based dark mode
+            darkMode: 'class',
             theme: {
                 extend: {
-                    colors: {
-                        'primary': '#1e40af', // A nice blue for accents
-                        'primary-hover': '#1d4ed8'
-                    },
                     fontFamily: {
-                        'sans': ['Inter', 'sans-serif'] // You can use fonts like Inter
+                        'sans': ['Inter', 'sans-serif']
                     }
                 }
             }
         }
     </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
-        /* A little bit of custom CSS for a smooth transition */
+        /* A little bit of custom CSS for smooth transitions */
         body {
             transition: background-color 0.3s ease, color 0.3s ease;
         }
     </style>
 </head>
 
-<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans">
+<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-300 font-sans antialiased">
 
-    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+    <button onclick="toggleMode()" class="fixed top-4 right-4 z-10 p-2 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle Dark Mode">
+        <i class="ph-bold ph-moon"></i>
+    </button>
+    
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
 
-        <header class="flex justify-between items-center mb-12">
-            <div>
-                <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">Ali Ahmed Elgendy</h1>
-                <p class="mt-1 text-lg text-primary dark:text-sky-400">Cybersecurity Student | Linux & Networking Enthusiast</p>
+        <header class="text-center mb-12">
+            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">Ali Ahmed Elgendy</h1>
+            
+            <div class="mt-6 flex justify-center items-center flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600 dark:text-slate-400">
+                <span class="flex items-center">
+                    <i class="ph-bold ph-phone mr-1.5 text-base"></i>
+                    +20 127 439 8125
+                </span>
+                <span class="flex items-center">
+                    <i class="ph-bold ph-envelope-simple mr-1.5 text-base"></i>
+                    <a href="mailto:alielg866@gmail.com" class="hover:underline">alielg866@gmail.com</a>
+                </span>
+                <span class="flex items-center">
+                    <i class="ph-bold ph-map-pin mr-1.5 text-base"></i>
+                    Cairo, Egypt
+                </span>
             </div>
-            <button onclick="toggleMode()" class="px-4 py-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
-                Toggle Mode
-            </button>
+            <div class="mt-4 flex justify-center items-center flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600 dark:text-slate-400">
+                <span class="flex items-center">
+                    <i class="ph-bold ph-github-logo mr-1.5 text-base"></i>
+                    <a href="https://github.com/elw000" target="_blank" class="font-medium text-blue-600 dark:text-sky-400 hover:underline">GitHub</a>
+                </span>
+                <span class="flex items-center">
+                    <i class="ph-bold ph-linkedin-logo mr-1.5 text-base"></i>
+                    <a href="https://www.linkedin.com/in/elw00" target="_blank" class="font-medium text-blue-600 dark:text-sky-400 hover:underline">LinkedIn</a>
+                </span>
+            </div>
         </header>
 
         <main class="space-y-10">
 
-            <section id="about" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">About Me</h2>
-                <p class="leading-relaxed">A dedicated cybersecurity student with strong foundations in web, networking, and programming, seeking an entry-level opportunity to apply technical skills and contribute to cybersecurity advancements.</p>
+            <section id="objective">
+                <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Objective</h2>
+                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm">
+                    <p class="leading-relaxed">A dedicated cybersecurity student with strong foundations in web, networking, and programming, seeking an entry-level opportunity to apply technical skills and contribute to cybersecurity advancements.</p>
+                </div>
             </section>
 
-            <section id="education" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Education</h2>
-                <p><strong>Zagazig University</strong><br>
-                Bachelor of Computer Science</p>
-            </section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <section id="education">
+                    <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Education</h2>
+                    <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm h-full">
+                        <p class="font-bold text-slate-900 dark:text-white">Zagazig University</p>
+                        <p>Bachelor of Computer Science</p>
+                    </div>
+                </section>
+                
+                <section id="languages">
+                    <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Languages</h2>
+                    <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm h-full">
+                        <ul class="space-y-1">
+                            <li><span class="font-bold text-slate-900 dark:text-white">Arabic:</span> Native</li>
+                            <li><span class="font-bold text-slate-900 dark:text-white">English:</span> Professional Proficiency</li>
+                        </ul>
+                    </div>
+                </section>
+            </div>
 
-            <section id="skills" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Skills</h2>
-                <ul class="list-disc list-inside space-y-1">
-                    <li>Linux Administration</li>
-                    <li>Operating Systems: Linux, Windows</li>
-                    <li>Networking</li>
-                    <li>Cybersecurity Tools: Wireshark, Malware Analysis</li>
-                </ul>
-            </section>
-
-            <section id="certifications" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
-                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Certifications</h2>
-                <ul class="list-disc list-inside space-y-1">
-                    <li>Linux System Administration with IBM Power System</li>
-                    <li>Security+</li>
-                    <li>Malware Analyst Fundamentals</li>
+            <section id="skills">
+                <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Skills</h2>
+                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Linux administration</li>
+                        <li>Operating Systems: Linux, Windows</li>
+                        <li>Networking</li>
+                        <li>Cybersecurity Tools: Wireshark and malware analysis tools</li>
                     </ul>
+                </div>
             </section>
 
-            <section id="contact" class="text-center">
-                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Contact Me</h2>
-                <p>
-                    <a href="mailto:alielg866@gmail.com" class="text-primary dark:text-sky-400 hover:underline">alielg866@gmail.com</a>
-                </p>
-                <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Cairo, Egypt</p>
+            <section id="certifications">
+                <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Certifications</h2>
+                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm">
+                    <ul class="list-disc list-inside space-y-2">
+                        <li>Linux System Administration with IBM Power System</li>
+                        <li>Security+</li>
+                        <li>Malware Analyst Fundamentals</li>
+                        <li>Linux Server Administration</li>
+                        <li>Linux100</li>
+                        <li>OWASP Top 10 (Web)</li>
+                        <li>Pre Security</li>
+                        <li>Red Hat System Administration</li>
+                    </ul>
+                </div>
             </section>
 
         </main>
@@ -95,11 +136,37 @@
     </div>
 
     <script>
+        const htmlElement = document.documentElement;
+        const toggleButton = document.querySelector('button[aria-label="Toggle Dark Mode"]');
+        const moonIcon = '<i class="ph-bold ph-moon"></i>';
+        const sunIcon = '<i class="ph-bold ph-sun"></i>';
+
+        // Function to set the theme and icon
+        function applyTheme(theme) {
+            if (theme === 'dark') {
+                htmlElement.classList.add('dark');
+                toggleButton.innerHTML = sunIcon;
+            } else {
+                htmlElement.classList.remove('dark');
+                toggleButton.innerHTML = moonIcon;
+            }
+        }
+
+        // Check local storage first
+        const savedTheme = localStorage.getItem('theme');
+        if (savedTheme) {
+            applyTheme(savedTheme);
+        } else {
+            // If no theme saved, use system preference
+            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+            applyTheme(prefersDark ? 'dark' : 'light');
+        }
+
         function toggleMode() {
-            // Get the HTML element
-            const htmlElement = document.documentElement;
-            // Check if it has the 'dark' class and toggle it
-            htmlElement.classList.toggle('dark');
+            const isDark = htmlElement.classList.toggle('dark');
+            const newTheme = isDark ? 'dark' : 'light';
+            localStorage.setItem('theme', newTheme);
+            applyTheme(newTheme);
         }
     </script>
 </body>
