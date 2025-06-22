@@ -1,62 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" class=""> <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ali Ahmed Elgendy - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        // 2. Custom configuration for Tailwind (optional, but good for custom colors/fonts)
+        tailwind.config = {
+            darkMode: 'class', // This enables class-based dark mode
+            theme: {
+                extend: {
+                    colors: {
+                        'primary': '#1e40af', // A nice blue for accents
+                        'primary-hover': '#1d4ed8'
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'sans-serif'] // You can use fonts like Inter
+                    }
+                }
+            }
+        }
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* A little bit of custom CSS for a smooth transition */
+        body {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
 </head>
-<body>
-    <header>
-        <h1>Ali Ahmed Elgendy</h1>
-        <p>Cybersecurity Student | Linux & Networking Enthusiast</p>
-        <button onclick="toggleMode()">Toggle Dark Mode</button>
 
-    </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>A dedicated cybersecurity student with strong foundations in web, networking, and programming, seeking an entry-level opportunity to apply technical skills and contribute to cybersecurity advancements.</p>
-    </section>
-    
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Zagazig University</strong><br>
-        Bachelor of Computer Science</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Linux Administration</li>
-            <li>Operating Systems: Linux, Windows</li>
-            <li>Networking</li>
-            <li>Cybersecurity Tools: Wireshark, Malware Analysis</li>
-        </ul>
-    </section>
-    
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <ul>
-            <li>Linux System Administration with IBM Power System</li>
-            <li>Security+</li>
-            <li>Malware Analyst Fundamentals</li>
-            <li>Linux Server Administration</li>
-            <li>OWASP Top 10 (Web)</li>
-            <li>Pre Security</li>
-            <li>Red Hat System Administration</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="mailto:alielg866@gmail.com">alielg866@gmail.com</a></p>
-        <p>Location: Cairo, Egypt</p>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 Ali Ahmed Elgendy</p>
-    </footer>
+<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-200 font-sans">
+
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 py-12">
+
+        <header class="flex justify-between items-center mb-12">
+            <div>
+                <h1 class="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white">Ali Ahmed Elgendy</h1>
+                <p class="mt-1 text-lg text-primary dark:text-sky-400">Cybersecurity Student | Linux & Networking Enthusiast</p>
+            </div>
+            <button onclick="toggleMode()" class="px-4 py-2 rounded-lg bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors">
+                Toggle Mode
+            </button>
+        </header>
+
+        <main class="space-y-10">
+
+            <section id="about" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">About Me</h2>
+                <p class="leading-relaxed">A dedicated cybersecurity student with strong foundations in web, networking, and programming, seeking an entry-level opportunity to apply technical skills and contribute to cybersecurity advancements.</p>
+            </section>
+
+            <section id="education" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Education</h2>
+                <p><strong>Zagazig University</strong><br>
+                Bachelor of Computer Science</p>
+            </section>
+
+            <section id="skills" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Skills</h2>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Linux Administration</li>
+                    <li>Operating Systems: Linux, Windows</li>
+                    <li>Networking</li>
+                    <li>Cybersecurity Tools: Wireshark, Malware Analysis</li>
+                </ul>
+            </section>
+
+            <section id="certifications" class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-md">
+                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Certifications</h2>
+                <ul class="list-disc list-inside space-y-1">
+                    <li>Linux System Administration with IBM Power System</li>
+                    <li>Security+</li>
+                    <li>Malware Analyst Fundamentals</li>
+                    </ul>
+            </section>
+
+            <section id="contact" class="text-center">
+                <h2 class="text-2xl font-bold mb-3 text-slate-900 dark:text-white">Contact Me</h2>
+                <p>
+                    <a href="mailto:alielg866@gmail.com" class="text-primary dark:text-sky-400 hover:underline">alielg866@gmail.com</a>
+                </p>
+                <p class="mt-1 text-sm text-slate-600 dark:text-slate-400">Cairo, Egypt</p>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-16 text-sm text-slate-500">
+            <p>&copy; 2025 Ali Ahmed Elgendy</p>
+        </footer>
+
+    </div>
+
+    <script>
+        function toggleMode() {
+            // Get the HTML element
+            const htmlElement = document.documentElement;
+            // Check if it has the 'dark' class and toggle it
+            htmlElement.classList.toggle('dark');
+        }
+    </script>
 </body>
 </html>
-
