@@ -1,110 +1,4 @@
-<!DOCTYPE html>
-<html lang="en" class=""> <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ali Ahmed Elgendy - CV</title>
-    
-    <script src="https://cdn.tailwindcss.com"></script>
-    
-    <script src="https://unpkg.com/@phosphor-icons/web"></script>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-    
-    <script>
-        // Custom configuration for Tailwind
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    fontFamily: {
-                        'sans': ['Inter', 'sans-serif']
-                    }
-                }
-            }
-        }
-    </script>
-    <style>
-        /* A little bit of custom CSS for smooth transitions */
-        body {
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
-    </style>
-</head>
-
-<body class="bg-slate-100 dark:bg-slate-900 text-slate-800 dark:text-slate-300 font-sans antialiased">
-
-    <button onclick="toggleMode()" class="fixed top-4 right-4 z-10 p-2 rounded-full bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 transition-colors" aria-label="Toggle Dark Mode">
-        <i class="ph-bold ph-moon"></i>
-    </button>
-    
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
-
-        <header class="text-center mb-12">
-            <h1 class="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white">Ali Ahmed Elgendy</h1>
-            
-            <div class="mt-6 flex justify-center items-center flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600 dark:text-slate-400">
-                <span class="flex items-center">
-                    <i class="ph-bold ph-phone mr-1.5 text-base"></i>
-                    +20 127 439 8125
-                </span>
-                <span class="flex items-center">
-                    <i class="ph-bold ph-envelope-simple mr-1.5 text-base"></i>
-                    <a href="mailto:alielg866@gmail.com" class="hover:underline">alielg866@gmail.com</a>
-                </span>
-                <span class="flex items-center">
-                    <i class="ph-bold ph-map-pin mr-1.5 text-base"></i>
-                    Cairo, Egypt
-                </span>
-            </div>
-            <div class="mt-4 flex justify-center items-center flex-wrap gap-x-5 gap-y-2 text-sm text-slate-600 dark:text-slate-400">
-                <span class="flex items-center">
-                    <i class="ph-bold ph-github-logo mr-1.5 text-base"></i>
-                    <a href="https://github.com/elw000" target="_blank" class="font-medium text-blue-600 dark:text-sky-400 hover:underline">GitHub</a>
-                </span>
-                <span class="flex items-center">
-                    <i class="ph-bold ph-linkedin-logo mr-1.5 text-base"></i>
-                    <a href="https://www.linkedin.com/in/elw00" target="_blank" class="font-medium text-blue-600 dark:text-sky-400 hover:underline">LinkedIn</a>
-                </span>
-                <span class="flex items-center">
-                    <i class="ph-bold ph-medium-logo mr-1.5 text-base"></i>
-                    <a href="https://medium.com/@alielgendy4" target="_blank" class="font-medium text-blue-600 dark:text-sky-400 hover:underline">Medium</a>
-                </span>
-            </div>
-        </header>
-
-        <main class="space-y-10">
-
-            <section id="objective">
-                <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Objective</h2>
-                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm">
-                    <p class="leading-relaxed">A cybersecurity professional building upon a strong foundation in networking and Linux administration by actively studying DevOps. I am seeking an opportunity to apply these skills and grow into a DevSecOps role, where I can help secure and automate the entire development lifecycle.</p>
-                </div>
-            </section>
-
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
-                <section id="education">
-                    <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Education</h2>
-                    <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm h-full">
-                        <p class="font-bold text-slate-900 dark:text-white">Zagazig University</p>
-                        <p>Bachelor of Computer Science</p>
-                        <p class="mt-1 text-sm text-slate-500 dark:text-slate-400">Expected Graduation: 2027</p>
-                    </div>
-                </section>
-                
-                <section id="languages">
-                    <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Languages</h2>
-                    <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm h-full">
-                        <ul class="space-y-1">
-                            <li><span class="font-bold text-slate-900 dark:text-white">Arabic:</span> Native</li>
-                            <li><span class="font-bold text-slate-900 dark:text-white">English:</span> Professional Proficiency</li>
-                        </ul>
-                    </div>
-                </section>
-            </div>
-
-            <section id="skills">
+<section id="skills">
                 <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Skills</h2>
                 <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm">
                     
@@ -135,79 +29,19 @@
                             <ul class="list-disc list-inside space-y-1.5 text-slate-700 dark:text-slate-300">
                                 <li>Python</li>
                                 <li>Bash & Powershell</li>
-                                <li>JavaScript & HTML</li>
-                                <li>C++</li>
                             </ul>
                         </div>
 
                         <div>
-                            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Currently Learning</h3>
+                            <h3 class="text-lg font-semibold text-slate-900 dark:text-white mb-2">Currently Learning: DevOps & DevSecOps</h3>
                              <ul class="list-disc list-inside space-y-1.5 text-slate-700 dark:text-slate-300">
-                                <li class="font-semibold text-blue-600 dark:text-sky-400">DevOps & Automation (Docker, CI/CD)</li>
+                                <li><span class="font-medium">CI/CD:</span> Jenkins, GitHub Actions</li>
+                                <li><span class="font-medium">Containerization:</span> Docker, Kubernetes</li>
+                                <li><span class="font-medium">IaC:</span> Terraform, Ansible</li>
+                                <li><span class="font-medium">Monitoring:</span> Prometheus, Grafana</li>
                             </ul>
                         </div>
 
                     </div>
                 </div>
             </section>
-
-            <section id="certifications">
-                <h2 class="text-xl font-bold uppercase tracking-wider text-blue-700 dark:text-sky-400 mb-3">Certifications</h2>
-                <div class="bg-white dark:bg-slate-800/50 p-6 rounded-lg shadow-sm">
-                    <ul class="list-disc list-inside space-y-2">
-                        <li>Linux System Administration with IBM Power System</li>
-                        <li>Security+</li>
-                        <li>Malware Analyst Fundamentals</li>
-                        <li>Linux Server Administration</li>
-                        <li>Linux100</li>
-                        <li>OWASP Top 10 (Web)</li>
-                        <li>Pre Security</li>
-                        <li>Red Hat System Administration</li>
-                    </ul>
-                </div>
-            </section>
-
-        </main>
-
-        <footer class="text-center mt-16 text-sm text-slate-500">
-            <p>&copy; 2025 Ali Ahmed Elgendy</p>
-        </footer>
-
-    </div>
-
-    <script>
-        const htmlElement = document.documentElement;
-        const toggleButton = document.querySelector('button[aria-label="Toggle Dark Mode"]');
-        const moonIcon = '<i class="ph-bold ph-moon"></i>';
-        const sunIcon = '<i class="ph-bold ph-sun"></i>';
-
-        // Function to set the theme and icon
-        function applyTheme(theme) {
-            if (theme === 'dark') {
-                htmlElement.classList.add('dark');
-                toggleButton.innerHTML = sunIcon;
-            } else {
-                htmlElement.classList.remove('dark');
-                toggleButton.innerHTML = moonIcon;
-            }
-        }
-
-        // Check local storage first
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            applyTheme(savedTheme);
-        } else {
-            // If no theme saved, use system preference
-            const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-            applyTheme(prefersDark ? 'dark' : 'light');
-        }
-
-        function toggleMode() {
-            const isDark = htmlElement.classList.toggle('dark');
-            const newTheme = isDark ? 'dark' : 'light';
-            localStorage.setItem('theme', newTheme);
-            applyTheme(newTheme);
-        }
-    </script>
-</body>
-</html>
